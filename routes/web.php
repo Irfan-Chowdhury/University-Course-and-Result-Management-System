@@ -36,4 +36,16 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/create','TeacherController@create')->name('teacher.create');
         Route::post('/store','TeacherController@store')->name('teacher.store');
     });
+
+    Route::group(['prefix' => 'course_assign_to_teacher'], function () {
+        Route::get('/create','CourseAssignToTeacherController@create')->name('course_assign_to_teacher.create');
+        Route::get('/department-wise-teacher-list','CourseAssignToTeacherController@departmentWiseTeacherList')->name('department-wise-teacher-list'); //Ajax
+        Route::get('/teacher-wise-credit_and_course-info','CourseAssignToTeacherController@teacherWiseCreditAndCourseInfo')->name('teacher-wise-credit_and_course-info'); //Ajax
+        Route::get('/course-name_and_credit-info','CourseAssignToTeacherController@courseNameAndCreditInfo')->name('course-name_and_credit-info'); //Ajax
+        
+        //this alert not working properly
+        // Route::get('/credit-check-for-alert','CourseAssignToTeacherController@creditCheckForAlert')->name('credit-check-for-alert'); //Ajax
+        
+        Route::post('/store','CourseAssignToTeacherController@store')->name('course_assign_to_teacher.store');
+    });
 });

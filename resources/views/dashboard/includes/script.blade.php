@@ -34,11 +34,11 @@
   <script src="{{asset('additional/js/sb-admin-2.min.js')}}"></script>
 
   <!-- Page level plugins -->
-  <script src="{{asset('additional/vendor/chart.js/Chart.min.js')}}"></script>
+  {{-- <script src="{{asset('additional/vendor/chart.js/Chart.min.js')}}"></script> --}}
 
   <!-- Page level custom scripts -->
-  <script src="{{asset('additional/js/demo/chart-area-demo.js')}}"></script>
-  <script src="{{asset('additional/js/demo/chart-pie-demo.js')}}"></script>
+  {{-- <script src="{{asset('additional/js/demo/chart-area-demo.js')}}"></script> --}}
+  {{-- <script src="{{asset('additional/js/demo/chart-pie-demo.js')}}"></script> --}}
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

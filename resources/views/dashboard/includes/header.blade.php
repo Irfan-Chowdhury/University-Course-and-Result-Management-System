@@ -17,8 +17,8 @@
   
     <!-- Custom styles for this template-->
     <link href="{{asset('additional/css/sb-admin-2.min.css')}}" rel="stylesheet">
-    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> --}}
-    <script src="{{asset('js/jquery-3.4.1.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    {{-- <script src="{{asset('js/jquery-3.4.1.js')}}"></script> --}}
 
     
     

@@ -44,6 +44,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Teacher</span></a>
         </li>
+
+        <!-- Course Assign To Teacher -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('course_assign_to_teacher.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Course Assign To Teacher</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
