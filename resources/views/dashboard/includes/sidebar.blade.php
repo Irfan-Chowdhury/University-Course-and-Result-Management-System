@@ -22,10 +22,6 @@
         <!-- Divider -->
         <hr class="sidebar-divider">
   
-        <!-- Heading -->
-        {{-- <div class="sidebar-heading">
-          Interface
-        </div> --}}
   
         <!-- Department Setup -->
         <li class="nav-item">
@@ -39,6 +35,14 @@
           <a class="nav-link" href="{{route('course.create')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Course Setup</span></a>
+        </li>
+        
+
+        <!-- Teacher Setup -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('teacher.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Teacher</span></a>
         </li>
   
         <!-- Divider -->

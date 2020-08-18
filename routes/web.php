@@ -32,4 +32,8 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::post('/store','CourseController@store')->name('course.store');
     });
 
+    Route::group(['prefix' => 'teacher'], function () {
+        Route::get('/create','TeacherController@create')->name('teacher.create');
+        Route::post('/store','TeacherController@store')->name('teacher.store');
+    });
 });
