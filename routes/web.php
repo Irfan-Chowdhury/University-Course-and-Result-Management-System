@@ -27,4 +27,9 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/delete/{id}','DepartmentController@destroy')->name('department.delete');
     });
 
+    Route::group(['prefix' => 'course'], function () {
+        Route::get('/create','CourseController@create')->name('course.create');
+        Route::post('/store','CourseController@store')->name('course.store');
+    });
+
 });

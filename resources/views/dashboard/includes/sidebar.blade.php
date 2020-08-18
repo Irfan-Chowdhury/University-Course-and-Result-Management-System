@@ -34,7 +34,12 @@
             <span>Department Setup</span></a>
         </li>
         
-        
+        <!-- Course Setup -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('course.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Course Setup</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
