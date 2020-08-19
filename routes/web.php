@@ -53,4 +53,10 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/index','ViewCourseStaticsController@index')->name('view_course_statics.index');
         Route::get('/show','ViewCourseStaticsController@show')->name('view_course_statics.show');
     });
+
+    Route::group(['prefix' => 'student'], function () {
+        Route::get('/create','StudentController@index')->name('student.create');
+        Route::post('/store','StudentController@store')->name('student.store');
+    });
+
 });

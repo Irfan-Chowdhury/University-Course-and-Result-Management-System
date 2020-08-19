@@ -58,6 +58,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>View Course Statics</span></a>
         </li>
+
+        <!-- Register Student -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('student.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Register Student</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
