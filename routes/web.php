@@ -75,4 +75,9 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/index','ViewResultController@index')->name('view_result.index');
         Route::get('/show/{id}','ViewResultController@show')->name('view_result.show');
     });
+
+    Route::group(['prefix' => 'unassgin_courses'], function () {
+        Route::get('/create','UnassignAllCourses@create')->name('unassgin_courses.create');
+        Route::post('/unassign_course','UnassignAllCourses@unassign_course')->name('unassign_course');
+    });
 });

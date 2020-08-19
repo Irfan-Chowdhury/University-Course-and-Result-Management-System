@@ -39,7 +39,6 @@ class ResultController extends Controller
         $courses = DB::table('enroll_in_courses')
                     ->join('courses','enroll_in_courses.course_id','=','courses.id')
                     ->where('enroll_in_courses.student_id','=',$id) //id = students'id
-                    // ->where('enroll_in_courses.status','=',1) //New 
                     ->get();
 
         // return $courses;
@@ -62,14 +61,15 @@ class ResultController extends Controller
 
         // ==================== Option-1 ===================
 
-        $enroll_course_id = DB::table('enroll_in_courses')
+        $enroll_course_id = DB::table('enroll_in_courses') //আগে  course_id==0 না হলে "enroll_in_courses" এর id টা তুলে আনবে ।  
                             ->select('id')
                             ->where('student_id',$request->student_id) 
                             ->where('course_id',$request->course_id) 
                             ->first();
 
         
-        $data = Result::where('student_id',$request->student_id)
+        $data = Result::select('id') //results এর id টা নেয়া হচ্ছে ।
+                        ->where('student_id',$request->student_id)
                         ->where('course_id',$request->course_id)
                         ->first();
 
@@ -77,16 +77,17 @@ class ResultController extends Controller
 
         if ($data) 
         {
-            $result = Result::find($data->id);
+            $result = Result::find($data->id); //results'id এর রো কে ধরা হলো ।  
             $result->student_id = $request->student_id;
             $result->course_id  = $request->course_id;
             $result->grade      = $request->grade;
+            $result->enroll_in_courses_id = $enroll_course_id->id; //enroll_in_courses' id টা এখানে আপডেট করা হলো । 
             $result->update();
 
             session()->flash('message','Result Updated Successfully');
             return redirect()->route('result.create');
         }
-        else 
+        else //নতুন হলে সেভ হবে । 
         {
             $result = new Result();
             $result->student_id = $request->student_id;

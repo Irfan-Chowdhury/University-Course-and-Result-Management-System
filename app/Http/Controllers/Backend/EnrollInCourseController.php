@@ -26,7 +26,6 @@ class EnrollInCourseController extends Controller
     {
         $studentDetails = DB::table('students')
                     ->where('students.id',$request->student_id)
-                    // ->where('students.id',2)
                     ->join('departments','students.department_id','=','departments.id')
                     ->first();
 

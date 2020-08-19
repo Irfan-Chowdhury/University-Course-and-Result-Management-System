@@ -17,6 +17,7 @@ class CreateEnrollInCoursesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('course_id');
+            $table->tinyInteger('unassigned_course_id')->default(0);
             $table->timestamps();
         });
     }

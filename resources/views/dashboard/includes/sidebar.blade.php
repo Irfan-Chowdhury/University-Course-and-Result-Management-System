@@ -87,6 +87,14 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>View Student Result</span></a>
         </li>
+
+        <!-- View Result -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('unassgin_courses.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Unassign All Courses</span></a>
+        </li>
+        
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">

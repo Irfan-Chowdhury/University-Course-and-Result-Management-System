@@ -19,6 +19,7 @@ class CreateCourseAssignToTeachersTable extends Migration
             $table->unsignedBigInteger('teacher_id');
             $table->unsignedBigInteger('course_id');
             $table->integer('credit_took');
+            $table->tinyInteger('unassigned_course_id')->default(0);;            
             $table->timestamps();
         });
     }

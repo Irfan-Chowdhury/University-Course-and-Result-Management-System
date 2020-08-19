@@ -33,7 +33,7 @@
                     </div>
 
                     
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-primary">View</button>
                     <br><br>
 
                     {{-- --------- Check in Flash Message -------- --}}
