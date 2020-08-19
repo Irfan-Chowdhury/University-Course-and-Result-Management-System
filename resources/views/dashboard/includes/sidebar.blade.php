@@ -65,6 +65,14 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Register Student</span></a>
         </li>
+
+
+         <!-- Enroll In Course -->
+         <li class="nav-item">
+          <a class="nav-link" href="{{route('enroll_in_course.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Enroll In Course</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
