@@ -70,4 +70,9 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/create/{id}','ResultController@show')->name('data_by_student.show');
         Route::post('/store','ResultController@store')->name('result.store');
     });
+
+    Route::group(['prefix' => 'view_result'], function () {
+        Route::get('/index','ViewResultController@index')->name('view_result.index');
+        Route::get('/show/{id}','ViewResultController@show')->name('view_result.show');
+    });
 });

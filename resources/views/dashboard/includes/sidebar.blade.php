@@ -80,6 +80,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Student Result Save</span></a>
         </li>
+
+        <!-- View Result -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('view_result.index')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>View Student Result</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
