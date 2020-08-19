@@ -114,7 +114,7 @@ class CourseAssignToTeacherController extends Controller
     public function store(Request $request)
     {
         $validator= Validator::make($request->all(),[
-            'department_id' => 'required|',
+            'department_id' => 'required',
             'teacher_id'    => 'required', 
             'course_id'     => 'required|unique:course_assign_to_teachers', 
         ]);
@@ -124,14 +124,14 @@ class CourseAssignToTeacherController extends Controller
            return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        $course = Course::where('id',$request->course_id)->first();
+        $course = Course::where('id',$request->course_id)->first(); //1.For pass size of credit 
         
         
         $courseAssignToTeacher = new CourseAssignToTeacher;
         $courseAssignToTeacher->department_id = $request->department_id;
         $courseAssignToTeacher->teacher_id    = $request->teacher_id;
         $courseAssignToTeacher->course_id     = $request->course_id;
-        $courseAssignToTeacher->credit_took   = $course->credit;
+        $courseAssignToTeacher->credit_took   = $course->credit; //1.pass size of credit 
         $courseAssignToTeacher->save();
 
         session()->flash('type','success');

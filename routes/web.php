@@ -48,4 +48,9 @@ Route::group(['namespace'=>'Backend'], function () {
         
         Route::post('/store','CourseAssignToTeacherController@store')->name('course_assign_to_teacher.store');
     });
+
+    Route::group(['prefix' => 'view_course_statics'], function () {
+        Route::get('/index','ViewCourseStaticsController@index')->name('view_course_statics.index');
+        Route::get('/show','ViewCourseStaticsController@show')->name('view_course_statics.show');
+    });
 });

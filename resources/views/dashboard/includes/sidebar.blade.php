@@ -51,6 +51,13 @@
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Course Assign To Teacher</span></a>
         </li>
+
+        <!-- View Course Statics -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('view_course_statics.index')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>View Course Statics</span></a>
+        </li>
   
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
