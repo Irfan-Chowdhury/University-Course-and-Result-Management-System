@@ -59,6 +59,11 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::post('/store','StudentController@store')->name('student.store');
     });
 
+    Route::group(['prefix' => 'allocate_classroom'], function () {
+        Route::get('/create','AllocateClassroomController@index')->name('allocate_classroom.create');
+        Route::post('/store','AllocateClassroomController@store')->name('allocate_classroom.store');
+    });
+
     Route::group(['prefix' => 'enroll_in_course'], function () {
         Route::get('/create','EnrollInCourseController@create')->name('enroll_in_course.create');
         Route::get('/student-wise-info','EnrollInCourseController@studentWiseInfo')->name('student-wise-info');

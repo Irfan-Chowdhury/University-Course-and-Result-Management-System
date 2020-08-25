@@ -66,6 +66,12 @@
             <span>Register Student</span></a>
         </li>
 
+        <!-- Allocate Classroom -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('allocate_classroom.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Allocate Classroom</span></a>
+        </li>
 
          <!-- Enroll In Course -->
          <li class="nav-item">
