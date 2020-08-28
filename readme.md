@@ -1,72 +1,31 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<div align="center">
+  
+# Project Specification
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+</div>
 
-## About Laravel
+![Specification of University Course and Result Management System-01](https://user-images.githubusercontent.com/32363317/91577081-0d781480-e96a-11ea-9150-9d2910557dc4.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Specification of University Course and Result Management System-02](https://user-images.githubusercontent.com/32363317/91577149-22ed3e80-e96a-11ea-9892-66e0c50e1bd4.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Specification of University Course and Result Management System-03](https://user-images.githubusercontent.com/32363317/91577181-2aace300-e96a-11ea-85fd-02e2586cc697.png)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Specification of University Course and Result Management System-04](https://user-images.githubusercontent.com/32363317/91577203-326c8780-e96a-11ea-809a-1ee1f5cda1d7.png)
 
-## Learning Laravel
+![Specification of University Course and Result Management System-05](https://user-images.githubusercontent.com/32363317/91577236-3e584980-e96a-11ea-9a76-cc6fc2b0d166.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Specification of University Course and Result Management System-06](https://user-images.githubusercontent.com/32363317/91577273-4adca200-e96a-11ea-8a88-53a1691d3d80.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![Specification of University Course and Result Management System-07](https://user-images.githubusercontent.com/32363317/91577295-5203b000-e96a-11ea-9b41-1a45f01103de.png)
 
-## Laravel Sponsors
+![Specification of University Course and Result Management System-08](https://user-images.githubusercontent.com/32363317/91577318-58922780-e96a-11ea-99e3-f790cd7b3c01.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![Specification of University Course and Result Management System-09](https://user-images.githubusercontent.com/32363317/91577342-6051cc00-e96a-11ea-8856-a79455b13d89.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+![Specification of University Course and Result Management System-10](https://user-images.githubusercontent.com/32363317/91577368-68aa0700-e96a-11ea-8568-607cdf93e7d2.png)
 
-## Contributing
+![Specification of University Course and Result Management System-11](https://user-images.githubusercontent.com/32363317/91577390-6f387e80-e96a-11ea-8703-92026abbaf93.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![Specification of University Course and Result Management System-12](https://user-images.githubusercontent.com/32363317/91577410-765f8c80-e96a-11ea-9420-1692b76db353.png)
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![Specification of University Course and Result Management System-13](https://user-images.githubusercontent.com/32363317/91577432-7f505e00-e96a-11ea-8ad2-54ddf80930c4.png)
