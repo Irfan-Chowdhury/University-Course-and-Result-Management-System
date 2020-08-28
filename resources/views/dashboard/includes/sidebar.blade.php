@@ -73,6 +73,13 @@
             <span>Allocate Classroom</span></a>
         </li>
 
+        <!-- View Class Schedule and Room Allocation -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('view_class_schedule_and_room_allocation.index')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>View Class Schedule and Room Allocation</span></a>
+        </li>
+
          <!-- Enroll In Course -->
          <li class="nav-item">
           <a class="nav-link" href="{{route('enroll_in_course.create')}}">
