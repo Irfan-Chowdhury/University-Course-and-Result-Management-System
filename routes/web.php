@@ -90,4 +90,9 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::get('/create','UnassignAllCourses@create')->name('unassgin_courses.create');
         Route::post('/unassign_course','UnassignAllCourses@unassign_course')->name('unassign_course');
     });
+    
+    Route::group(['prefix' => 'unallocate_all_classrooms'], function () {
+        Route::get('/create','UnallocateAllClassroomController@create')->name('unallocate_all_classrooms.create');
+        Route::post('/unallocate','UnallocateAllClassroomController@unallocate')->name('unallocate');
+    });
 });

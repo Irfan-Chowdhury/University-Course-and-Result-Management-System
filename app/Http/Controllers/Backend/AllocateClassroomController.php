@@ -37,6 +37,7 @@ class AllocateClassroomController extends Controller
                     // ->where('course_id',$request->course_id)
                     ->where('room_id',$request->room_id)
                     ->where('day',$request->day)
+                    ->where('status',1)
                     ->get();
 
         // return $data ;

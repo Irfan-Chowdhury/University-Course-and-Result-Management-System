@@ -101,11 +101,18 @@
             <span>View Student Result</span></a>
         </li>
 
-        <!-- View Result -->
+        <!-- Unassign All Courses -->
         <li class="nav-item">
           <a class="nav-link" href="{{route('unassgin_courses.create')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Unassign All Courses</span></a>
+        </li>
+        
+        <!-- Unallocate All Classrooms -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('unallocate_all_classrooms.create')}}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Unallocate All Classrooms</span></a>
         </li>
         
   
