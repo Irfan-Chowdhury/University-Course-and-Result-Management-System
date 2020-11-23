@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\Department;
 
 class DepartmentController extends Controller
-{
-    
+{    
     public function index()
     {
         $departments = Department::all();

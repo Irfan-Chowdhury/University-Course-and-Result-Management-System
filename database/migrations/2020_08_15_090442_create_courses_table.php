@@ -16,12 +16,15 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
 			$table->unsignedBigInteger('department_id');
-            $table->unsignedBigInteger('semester_id');
+            $table->unsignedInteger('semester_id');
             $table->string('course_code');
             $table->string('course_name');
             $table->integer('credit');
             $table->text('description');
             $table->timestamps();
+
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('semester_id')->references('id')->on('semesters');
         });
     }
 

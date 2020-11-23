@@ -20,6 +20,10 @@ class CreateResultsTable extends Migration
 			$table->unsignedBigInteger('enroll_in_courses_id');
             $table->string('grade');
             $table->timestamps();
+
+            $table->foreign('student_id')->references('id')->on('students');
+            $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('enroll_in_courses_id')->references('id')->on('enroll_in_courses');
         });
     }
 

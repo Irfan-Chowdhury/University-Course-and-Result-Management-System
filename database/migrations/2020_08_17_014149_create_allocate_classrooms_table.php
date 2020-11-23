@@ -23,6 +23,10 @@ class CreateAllocateClassroomsTable extends Migration
             $table->time('to');
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
+
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('room_id')->references('id')->on('rooms');
         });
     }
 

@@ -19,6 +19,10 @@ class CreateEnrollInCoursesTable extends Migration
             $table->unsignedBigInteger('course_id');
             $table->tinyInteger('unassigned_course_id')->default(0);
             $table->timestamps();
+
+            $table->foreign('student_id')->references('id')->on('students');
+            // $table->foreign('course_id')->references('id')->on('courses');
+
         });
     }
 

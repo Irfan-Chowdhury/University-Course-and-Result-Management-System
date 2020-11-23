@@ -40,6 +40,8 @@ class StudentController extends Controller
         // ============ Student_Reg_No Start ==================
         $year = date('Y',strtotime($request->date));
 
+        //return $year;
+
         $department = Department::find($request->department_id);
         $dept_code = $department->department_code;
 
@@ -47,7 +49,7 @@ class StudentController extends Controller
                         ->where('year','=',$year)
                         ->count();
 
-        // return $previous_total;
+        //return $previous_total;
 
         $new_total = $previous_total + 1;
 
@@ -61,17 +63,17 @@ class StudentController extends Controller
             $student_reg_no = $dept_code.'-'.$year.'-'.$new_total;
         }
 
-        // return $student_reg_no;
+        //return $student_reg_no;
 
         // ==================== Student_Reg_No End ==============
 
         $student = new Student();
-        $student->student_name = $request->student_name;
-        $student->email        = $request->email;
-        $student->contact_no   = $request->contact_no;
-        $student->year         = $year;
-        $student->address      = $request->address;
-        $student->department_id= $request->department_id;
+        $student->student_name   = $request->student_name;
+        $student->email          = $request->email;
+        $student->contact_no     = $request->contact_no;
+        $student->year           = $year;
+        $student->address        = $request->address;
+        $student->department_id  = $request->department_id;
         $student->student_reg_no = $student_reg_no;
         $student->save();
         

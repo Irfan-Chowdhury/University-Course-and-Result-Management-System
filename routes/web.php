@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
-Route::get('/dashboard','Backend\HomeController@index')->name('dashboard');
+Route::get('/dashboard','Backend\HomeController@index')->name('dashboard')->middleware('IsAdmin');
 
-Route::group(['namespace'=>'Backend'], function () {
+Route::group(['namespace'=>'Backend','middleware' => 'IsAdmin'], function () {
         
     Route::group(['prefix' => 'department'], function () {
         Route::get('/','DepartmentController@index')->name('department.index');
@@ -30,6 +30,9 @@ Route::group(['namespace'=>'Backend'], function () {
     Route::group(['prefix' => 'course'], function () {
         Route::get('/create','CourseController@create')->name('course.create');
         Route::post('/store','CourseController@store')->name('course.store');
+        Route::get('/edit/{id}','CourseController@edit')->name('course.edit');
+        Route::post('/update/{id}','CourseController@update')->name('course.update');
+        Route::get('/delete/{id}','CourseController@destroy')->name('course.delete');
     });
 
     Route::group(['prefix' => 'teacher'], function () {
@@ -96,3 +99,7 @@ Route::group(['namespace'=>'Backend'], function () {
         Route::post('/unallocate','UnallocateAllClassroomController@unallocate')->name('unallocate');
     });
 });
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

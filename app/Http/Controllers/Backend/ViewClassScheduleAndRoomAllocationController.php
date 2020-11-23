@@ -13,7 +13,12 @@ class ViewClassScheduleAndRoomAllocationController extends Controller
 {
     public function index()
     {
-        $departments = Department::all();
+        $departments = DB::table('departments') //fetch courses info 
+                    ->join('courses','courses.department_id','=','departments.id')
+                    ->select('departments.id','departments.department_name')
+                    ->distinct()
+                    ->get();
+
         return view('dashboard.pages.view_class_schedule_and_room_allocation.index',compact('departments')); 
     }
 
@@ -23,7 +28,6 @@ class ViewClassScheduleAndRoomAllocationController extends Controller
                     ->select('courses.id AS course_id','course_code','course_name')
                     ->where('courses.department_id',$request->department_id)
                     ->get();
-
         
         $data2 = AllocateClassroom::select('course_id') //retrive common value 
                 ->where('status',1)
@@ -46,7 +50,6 @@ class ViewClassScheduleAndRoomAllocationController extends Controller
         }
         //return $record[1];
 
-         
         foreach ($data as $key => $value) 
         {            
             // $schedules[] = Code...   //we can declare this way or
@@ -64,8 +67,9 @@ class ViewClassScheduleAndRoomAllocationController extends Controller
                 $schedules[$key] = NULL; // if records null, $schedules also will be NULL
             }
         }
-
-        // return $schedules[4];
+        
+        
+        // return $schedules[1];
 
         $departments = Department::all();
         return view('dashboard.pages.view_class_schedule_and_room_allocation.index',compact('departments','data','schedules')); 

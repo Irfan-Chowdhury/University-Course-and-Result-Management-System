@@ -19,10 +19,12 @@ class CreateStudentsTable extends Migration
             $table->string('email');
             $table->string('contact_no');
             $table->text('address');
-            $table->datetime('year');
+            $table->year('year');
             $table->unsignedBigInteger('department_id');
             $table->string('student_reg_no')->nullable();
             $table->timestamps();
+
+            $table->foreign('department_id')->references('id')->on('departments');
         });
     }
 

@@ -21,6 +21,10 @@ class CreateCourseAssignToTeachersTable extends Migration
             $table->integer('credit_took');
             $table->tinyInteger('unassigned_course_id')->default(0);;            
             $table->timestamps();
+
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('teacher_id')->references('id')->on('teachers');
+            // $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 
