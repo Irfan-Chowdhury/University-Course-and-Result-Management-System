@@ -1,3 +1,8 @@
+## Please Visit: 
+
+site: https://ucrms-bitm.herokuapp.com/ 
+username & password : admin@gmail.com
+
 <div align="center">
   
 # Project Specification
